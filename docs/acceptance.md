@@ -17,6 +17,8 @@
 | 长文本                         | 320px 下长英文、中文、弹窗不撑破布局                                                   |
 | 集中人工视觉检查               | 检查桌面首页、手机首页、手机表达页、手机深色单词页的无头截图                           |
 
+公网验收：GitHub Pages HTTPS 站点实际运行 **25 / 25** 项 Playwright 测试通过，耗时 **44.0 秒**，包含离线刷新与个人数据操作。GitHub Actions 的 Ubuntu / Node.js 22 环境中，安装、84 项单元测试、生产构建、25 项浏览器测试及 Pages 发布全部成功。
+
 浏览器覆盖：首页与全部导航、二级页面刷新、单词必填与规范化去重、更新已有释义、编辑、取消/确认删除、混合错误行批量预览与导入、三种复习模式、答案揭示前隐藏、三种评分与完成统计、数量上限、掌握/恢复、作文收藏与个人表达 CRUD/筛选、翻译收藏与个人表达、阅读提交校验与解析、听力倍速与音频刷新持久化、本地题包导入预览、备份下载/无效保护/确认恢复/二次清空、PWA scope/manifest/icons、离线刷新/复习/个人积累。
 
 单元测试覆盖日历边界、闰年、复习优先级、阶梯间隔、复习历史与单词的原子写入/删除、并发写入、备份完整校验、关联/枚举验证、故障注入后的事务回滚、题包不安全 URL/答案引用/唯一标识等。测试使用独立浏览器上下文与模拟数据库，不添加真实个人学习数据到仓库。
@@ -27,7 +29,11 @@
 
 仓库：[vizzinicoslett-code/cet6-prep](https://github.com/vizzinicoslett-code/cet6-prep)。Pages 已设为 GitHub Actions。代码完成后由工作流再次运行单元测试、构建和浏览器测试，通过后才发布。
 
-公网地址：[六级备考](https://vizzinicoslett-code.github.io/cet6-prep/)。初次提交时，Push / Actions / 公网验收待执行；最终部署结果在后续提交中记录。
+公网地址：[六级备考](https://vizzinicoslett-code.github.io/cet6-prep/)。仓库已实际创建，代码已提交并 Push，Pages 已通过 GitHub Actions 成功发布。
+
+初次发布提交 `7ab11ddcb0109b8d2f699bc7e91cdfad9c8094a9` 的[云端验收与部署记录](https://github.com/vizzinicoslett-code/cet6-prep/actions/runs/39408781773)全部成功。随后以 `BASE_URL=https://vizzinicoslett-code.github.io/cet6-prep/` 对真实公网运行全部 25 项浏览器测试，44.0 秒通过；七个入口及刷新无 404，未发现本站资源失败或明显控制台异常，PWA scope、manifest、图标、离线刷新和复习均通过。测试数据仅留在临时浏览器上下文，没有上传个人学习数据。
+
+本次文档补充不改变应用代码；后续同一工作流仍会对最新提交重新检查并发布，最新部署可在仓库 Actions 页面查看。
 
 ## 内容及实际限制
 
