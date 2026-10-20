@@ -1,0 +1,314 @@
+.practice-page > .panel {
+  padding: 24px;
+  margin-bottom: 22px;
+}
+.practice-page > .btn {
+  margin-bottom: 20px;
+}
+.practice-page .page-heading > .toolbar {
+  margin: 0;
+  flex-shrink: 0;
+}
+.practice-page .notice[role="alert"] {
+  color: var(--danger);
+  background: var(--danger-soft);
+  flex-wrap: wrap;
+}
+.practice-page .practice-import-preview p,
+.practice-page .practice-import-preview li {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.practice-import-preview ul {
+  padding-left: 20px;
+}
+.practice-page .practice-filters {
+  padding: 20px 24px;
+}
+.practice-filters .toolbar {
+  margin: 0;
+  gap: 16px;
+}
+.practice-filters .field {
+  flex: 1 1 150px;
+}
+.practice-coverage {
+  margin: 0 0 24px;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.practice-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.practice-card h2 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.practice-card p {
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+.practice-card .muted {
+  font-size: 11px;
+}
+.practice-page .practice-meta {
+  margin: 0;
+  gap: 8px;
+}
+.practice-meta .chip {
+  min-height: 0;
+  padding: 4px 0;
+  border-radius: 0;
+  font-size: 10px;
+}
+.practice-card .practice-card-actions {
+  margin: auto 0 0;
+  padding-top: 10px;
+}
+.practice-card-actions .btn {
+  font-size: 11px;
+}
+.practice-material > h2 {
+  font-size: 23px;
+  margin: 17px 0 10px;
+}
+.practice-material > p {
+  font-size: 12px;
+}
+.practice-material > .muted {
+  font-size: 11px;
+}
+.practice-passage {
+  margin: 25px 0;
+  padding-top: 23px;
+  border-top: 1px solid var(--line);
+  white-space: pre-wrap;
+  font:
+    17px/1.95 Georgia,
+    "Times New Roman",
+    "Microsoft YaHei",
+    serif;
+  overflow-wrap: anywhere;
+  color: var(--text);
+}
+.practice-page .practice-sources {
+  margin-top: 20px;
+  gap: 5px;
+}
+.practice-sources .btn {
+  padding: 8px;
+  font-size: 11px;
+  text-align: left;
+}
+.practice-page .practice-question {
+  padding: 17px 22px 22px;
+  margin: 27px 0 22px;
+  min-width: 0;
+}
+.practice-question legend {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.75;
+  font-weight: 500;
+  max-width: 100%;
+  padding: 0 8px;
+  overflow-wrap: anywhere;
+}
+.practice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 9px;
+}
+.practice-option {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+  color: var(--text);
+}
+.practice-option input[type="radio"] {
+  padding: 0;
+  margin: 4px 0 0;
+  flex-shrink: 0;
+}
+.practice-option:hover {
+  background: var(--surface-alt);
+}
+.practice-option:has(input:checked) {
+  border-color: var(--line);
+  background: var(--accent-soft);
+}
+.practice-question:disabled .practice-option {
+  cursor: default;
+}
+.practice-question:disabled .practice-option:not(:has(input:checked)) {
+  color: var(--muted);
+}
+.practice-feedback {
+  border-top: 1px solid var(--line);
+  margin-top: 19px;
+  padding-top: 18px;
+}
+.practice-feedback p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+.practice-feedback p:last-child {
+  margin-bottom: 0;
+}
+.practice-feedback.is-correct strong {
+  color: var(--accent);
+}
+.practice-feedback.is-incorrect strong {
+  color: var(--danger);
+}
+.practice-transcript {
+  margin: 20px 0 0;
+  white-space: pre-wrap;
+  font:
+    17px/1.95 Georgia,
+    "Times New Roman",
+    "Microsoft YaHei",
+    serif;
+  overflow-wrap: anywhere;
+}
+.audio-panel .section-title {
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+.audio-panel .section-title h2 {
+  font-size: 17px;
+  gap: 9px;
+}
+.audio-panel .audio-toolbar {
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+.audio-toolbar .audio-selection {
+  flex: 1 1 230px;
+}
+.audio-toolbar > .field:not(.audio-selection) {
+  flex: 0 1 120px;
+}
+.audio-panel audio {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.audio-panel > .muted {
+  margin: 14px 0 0;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.audio-panel > .notice {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .practice-page > .panel {
+    padding: 19px 17px;
+    margin-bottom: 18px;
+  }
+  .practice-page .page-heading > .toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+  .practice-page .page-heading > .toolbar .btn {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+  .practice-page .practice-filters {
+    padding: 18px 17px;
+  }
+  .practice-filters .toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 10px;
+  }
+  .practice-filters .field {
+    font-size: 11px;
+    gap: 7px;
+  }
+  .practice-filters .field select {
+    padding-left: 8px;
+    font-size: 10px;
+  }
+  .practice-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .practice-card {
+    padding: 21px 19px;
+  }
+  .practice-card h2 {
+    font-size: 19px;
+    margin-top: 13px;
+  }
+  .practice-coverage {
+    font-size: 10px;
+  }
+  .practice-material > h2 {
+    font-size: 21px;
+  }
+  .practice-passage {
+    font-size: 16px;
+    margin: 20px 0;
+    padding-top: 20px;
+  }
+  .practice-page .practice-question {
+    padding: 12px 12px 17px;
+  }
+  .practice-question legend {
+    font-size: 13px;
+  }
+  .practice-option {
+    padding: 10px 8px;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .practice-feedback {
+    margin: 16px 5px 0;
+  }
+  .practice-feedback p {
+    font-size: 11px;
+  }
+  .practice-transcript {
+    font-size: 16px;
+  }
+  .audio-panel .section-title {
+    gap: 12px;
+  }
+  .audio-panel .section-title h2 {
+    font-size: 16px;
+  }
+  .audio-panel .section-title .btn {
+    font-size: 11px;
+    padding: 8px 9px;
+  }
+  .audio-toolbar .audio-selection {
+    flex-basis: 100%;
+  }
+  .audio-toolbar > .field:not(.audio-selection) {
+    flex: 1 1 100px;
+  }
+  .audio-toolbar > .btn {
+    flex: 1 1 100px;
+  }
+}
